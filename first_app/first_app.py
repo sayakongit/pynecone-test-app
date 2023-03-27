@@ -19,9 +19,13 @@ def index() -> pc.Component:
 def about():
     return pc.text("About Page")
 
+def contact():
+    return pc.text("Contact Page")
+
 
 # Add state and page to the app.
 app = pc.App(state=State)
 app.add_page(index, route="/")
 app.add_page(about, route="/about")
+app.add_page(contact, route="/contact")
 app.compile()
